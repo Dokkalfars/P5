@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap&&family=Open+Sans:wght@300&display=swap");
+body {
+  background-color: #fafaf8 !important;
+}
+
+nav {
+  background-color: white !important;
+}
+
+.bg-img {
+  background-image: url("../img/bg-img.jpg");
+}
+
+.logo {
+  height: 3.125rem;
+}
+
+.footer-item {
+  color: black;
+  font-size: 1.3rem;
+}
+.footer-item:hover {
+  text-decoration: none;
+  font-weight: 500;
+  color: black;
+}
+
+.title, .title-product {
+  font-family: "Sansita Swashed", cursive;
+}
+
+.title-product {
+  font-size: 2.5rem;
+}
+
+.price-product {
+  font-size: 2rem;
+}
+
+.total-price {
+  font-size: 1.3rem;
+}
+
+.delivery {
+  max-width: 25% !important;
+}
+
+.btn {
+  background-color: #8f5bfe !important;
+  color: white !important;
+  border: 1px solid transparent !important;
+  font-weight: 600 !important;
+  transition: 0.5s;
+}
+.btn:hover {
+  background-color: #6119fc !important;
+  transition: 0.5s;
+}
+.btn-confirm {
+  font-size: 1.3rem !important;
+}
+
+/*# sourceMappingURL=style.css.map */
