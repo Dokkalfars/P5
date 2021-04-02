@@ -48,14 +48,17 @@
             <div class="border border-dark rounded shadow-lg my-5 py-5 text-center">
                 <p class="font-weight-bold">Merci pour votre commande n°:</p>
 
-                <h5></h5>
+                <!--Remplie avec le script Javascript "confirmation.js" permettant d'afficher l'id de commande-->
+                <h5 id="orderId"></h5>
 
-                <p class="font-weight-bold"></p>
+                <!--Remplie avec le script Javascript "confirmation.js" permettant d'afficher le prix total de la commande-->
+                <p id="totalPrice" class="font-weight-bold"></p>
 
                 <img src="../assets/img/livraison.png" alt="image livraison" class="delivery img-fluid">
                 <p><span class="title-product">A bientôt chez Orinoco !</span></p>
 
-                <button class="btn btn-warning">Retour à la page d'accueil</button>
+                <!--Le bouton permet de retourner à la page "index.html" et de vider le localStorage-->
+                <button class="btn btn-warning" id="btn-confirmation">Retour à la page d'accueil</button>
 
             </div>
         </main>
@@ -77,6 +80,10 @@
                 </ul>
             </div>
         </footer>
+
+<!--Javascript-->
+
+        <script type="text/javascript" src="../js/confirmation.js"></script>
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 

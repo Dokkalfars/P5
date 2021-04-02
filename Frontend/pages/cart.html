@@ -52,20 +52,29 @@
                     <p class="my-1">Prix</p>
                 </div>
                 
-                <div>
+                <div id="plugCart">
+
+                 <!--Zone remplie par le script Javascript "cart.js" avec les articles présent dans le LocalStorage-->   
 
                 </div>
 
                 <div class="d-flex flex-column align-items-end">
-                    <div class="my-3">
+                    <div id="totalPrice" class="my-3">
+
+                    <!--Zone remplie par le script Javascript "cart.js" avec la fonction "totalPriceOrder" permetant de faire l'addition des prix des articles-->
+
                     </div>
     
-                    <div>
+                    <div id="button-clear-cart">
+
+                    <!--Zone remplie par le script Javascript "cart.js" avec la fonction "deleteCart" permetant de supprimer les élément dans le LocalStorage -->
 
                     </div>
                 </div>
 
             </div>
+
+<!--Formulaire à remplir par l'utilisateur-->
 
             <form>
                 <div>
@@ -99,8 +108,10 @@
                 </div>
             </form>
 
+<!--Bouton de validation permettant d'envoyer notre commande avec les informations de l'utilisateur-->
+
             <div class="text-center">
-                <button class="btn btn-confirm my-3">Valider la commande</button>
+                <button id="btn-validation" class="btn btn-confirm my-3">Valider la commande</button>
             </div>
         </main>
 
@@ -121,6 +132,10 @@
                 </ul>
             </div>
         </footer>
+
+<!--Javascript-->
+
+        <script type="text/javascript" src="../js/cart.js"></script>
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
