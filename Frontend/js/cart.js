@@ -177,13 +177,20 @@ function validateForm() {
         let address = document.getElementById('address').value;
         let city = document.getElementById('city').value;
         let email = document.getElementById('email').value;
-        if (firstname, lastname, address, city, email != "" && /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)) {
-            confirmationOrder();
+        if (products.length !=0 ) {
+            if (firstname, lastname, address, city, email != "" && /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)) {
+                confirmationOrder();
+                return true;
+            } else {
+                alert("Saisissez tous les champs et entrez un email valide");
+                return false;
+            }
             return true;
         } else {
-            alert("Saisissez tous les champs et entrez un email valide");
+            alert("Le panier est vide");
             return false;
         }
+        
     })
 }
 
